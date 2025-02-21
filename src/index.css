@@ -18,10 +18,11 @@
 .header{
     background-color:  #1a1aff;
     display: flex;
-  align-items: center;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     position: relative;
+    
 }
 .tilte{
     font-weight: bold;
@@ -41,13 +42,18 @@
 
 .nav-links a{
    text-decoration: none;
+   color: white ;
+}
+.nav-links a:hover{
+    color: #717d7e;
+
 }
 
 .nav-links li:hover{
  background-color: #f4d03f;
- color: white;
  border-radius: 30px;
 }
+
 
 
 .nav-links li{
@@ -120,8 +126,6 @@
 .menu-icon{
     color: white;
     padding: 10px 10px;
-    /* height: 36px;
-    width: 36px; */
  
 }
 
@@ -165,9 +169,20 @@
     display: flex;
     gap: 40px;
     margin-bottom: 30px;
+    animation-name: square;
+    animation: square 1s infinite;
     cursor: pointer;
 
 
+}
+@keyframes square {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    
 }
 .container__icons p{
     font-size: 36px;
@@ -224,19 +239,8 @@
 
 }
    
-/* .about__container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    width: 100%;
-    background-color:   #333333;
 
-    position: relative;
-    gap: 50px;
-    left: 5%;
-  
-}  */
+
 .about img{
     width: 50%;
     max-width: 500px;
@@ -380,15 +384,23 @@
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
     cursor: pointer;
+    animation-name: square;
+    animation: square 1s infinite;
+}
+
+@keyframes square{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+
 }
 
 .btn-project:hover{
     background-color: #f7dc6f;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    transform: translateY(-5px);
     color:  #800040;
     cursor: pointer;
 }
@@ -453,12 +465,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 40px;
+    right: 60px;
     
         }
     
-
-        .resume-content{
+     .resume-content{
             padding: 10px;
             
         }
@@ -485,17 +496,15 @@
     margin-left: 10px;
     padding: 10px 15px;
     background-color:  #ffcc00;
-    color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
     transition: background-color 0.3s;
 } 
 .resume-btn:hover{
-    background-color: #f1d45d;
-    color: black;
+    background-color: #f8d33f;
+    color: brown;
 }  
 
 /* contact */
@@ -527,23 +536,7 @@
 .contact_container p{
     margin-bottom: 50px;
 }
-/* .contact__s1  { */
-    /* font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    text-align: center; */
-    /* display: flex;
-    flex-direction: column;
-column-gap: 20px; */
-
-/* } */
-/* .contact__s1 span{
-      top: 30%;
-} */
-
-
-
- .contact__s1 i{
+.contact__s1 i{
     color: #ffcc00;
 } 
  @media (max-width: 700px) {
@@ -555,7 +548,7 @@ column-gap: 20px; */
     
 } 
 
-
+/* footer */
 .footer {
     padding: 24px;
     background-color: black;
